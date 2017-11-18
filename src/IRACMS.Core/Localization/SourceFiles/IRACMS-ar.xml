@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="ar">
+  <texts>
+    <text name="HomePage" value="الرئيسية" />
+    <text name="About" value="عن النظام" />
+    <text name="WellcomeMessage" value="مرحبا بك!" />
+
+    <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
+    <text name="TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
+
+    <text name="InvalidUserNameOrPassword" value="خطأ باسم المستخدم أو كلمة المرور." />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="There is no tenant defined with name {0}" />
+    <text name="TenantIsNotActive" value="Tenant {0} is not active." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="User {0} is not active and can not log in." />
+    <text name="UserEmailIsNotConfirmedAndCanNotLogin">Your email address is not confirmed. You can not login.</text>
+    <text name="UserLockedOutMessage">The user account has been locked out. Please try again later.</text>
+    <text name="PleaseEnterLoginInformation" value="Please enter login information" />
+    <text name="TenancyName" value="اسم الاشتراك" />
+    <text name="UserNameOrEmail" value="اسم المستخدم أو الإيميل" />
+    <text name="Password" value="كلمة المرور" />
+    <text name="RememberMe" value="تذكر بياناتى" />
+    <text name="LogIn" value="دخـــول" />
+
+    <text name="LoginFailed" value="خطأ أثناء الدخول!" />
+
+    <text name="NameSurname" value="اسم الشهره" />
+    <text name="UserName" value="اسم المستخدم" />
+    <text name="Name" value="الاسم" />
+    <text name="Surname" value="اللقب" />
+    <text name="EmailAddress" value="البريد الإلكتروني" />
+
+    <text name="Tenants" value="الاشتراكات" />
+    <text name="SavedSuccessfully" value="تمت عملية الحفظ بنجاح." />
+    <text name="CreateNewTenant" value="اشتراك جديد" />
+    <text name="AdminEmailAddress" value="إيميل مدير النظام" />
+    <text name="Save" value="حفظ" />
+    <text name="Cancel" value="إلغاء" />
+    <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
+    <text name="DefaultPasswordIs" value="Default password is {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Can be empty to login as host." />
+    <text name="Register" value="عضوية جديدة" />
+    <text name="OrLoginWith" value="أو الدخول عن طريق" />
+    <text name="WaitingForActivationMessage" value="يرجي الانتظار فان حسابك لازال قيد المراجعه والتفعيل." />
+    <text name="TenantSelection" value="اختيار اشتراك" />
+    <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
+    <text name="Logout" value="خــروج" />
+
+    <text name="RegisterFormUserNameInvalidMessage">يرجي عدم إدخال بريد إلكتروني لهذا الاسم.</text>
+
+    <text name="DatabaseConnectionString" value="Database connection string" />
+    <text name="Users" value="المستخدمين" />
+    <text name="IsActive" value="نشط" />
+    <text name="FullName" value="الاسم بالكامل" />
+    <text name="CreateNewUser" value="مستخدم جديد" />
+    <text name="Yes" value="نعم" />
+    <text name="No" value="لا" />
+    <text name="Optional" value="اختياري" />
+    <text name="LeaveEmptyToSwitchToHost">اتركه فارغا للتبديل الى السرفر</text>
+
+    <text name="CurrentTenant">الاشتراك الحالى</text>
+    <text name="NotSelected">لم يتم اختياره</text>
+    <text name="Change">تغيير</text>
+    <text name="ChangeTenant">تغيير الاشتراك</text>
+
+    <text name="MultiLevelMenu">المبيعات</text>
+    <text name="Back">رجوع</text>
+    <text name="SuccessfullyRegistered">تم تسجيل الدخول بنجاح.</text>
+    <text name="WaitingForEmailActivation">يجب تفعيل بريدك الإلكتروني أولاً.</text>
+    <text name="Roles">الصلاحيات</text>
+    <text name="DisplayName">اسم العرض</text>
+
+    <text name="Edit">تعديل</text>
+    <text name="Delete">حذف</text>
+
+    <text name="CreateNewRole">صىحية جديدة</text>
+    <text name="RoleName">اسم الصلاحية</text>
+    <text name="Actions">خيارات</text>
+
+    <text name="CouldNotCompleteLoginOperation">Could not complete login operation. Please try again later.</text>
+
+    <text name="CouldNotValidateExternalUser">Could not validate external user</text>
+    <text name="EditRole">تعديل الصلاحية</text>
+    <text name="EditTenant">تعديل اشتراك</text>
+    <text name="EditUser">تعديل مستخدم</text>
+    <text name="TenantIdIsNotActive{0}">الاشتراك {0} غير مفعل.</text>
+    <text name="UnknownTenantId{0}">هذا الاشتراك {0} غير معرف.</text> 
+    
+    <text name="Clients" value="العملاء" />
+  </texts>
+</localizationDictionary>

@@ -48,7 +48,8 @@ namespace IRACMS.Authorization
                 case AbpLoginResultType.InvalidPassword:
                     return L("InvalidUserNameOrPassword");
                 case AbpLoginResultType.InvalidTenancyName:
-                    return L("ThereIsNoTenantDefinedWithName{0}", tenancyName);
+                    return L("ThereIsNoTenantDefinedW" +
+                        "ithName{0}", tenancyName);
                 case AbpLoginResultType.TenantIsNotActive:
                     return L("TenantIsNotActive", tenancyName);
                 case AbpLoginResultType.UserIsNotActive:

@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using IRACMS.DA.Models;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 
 namespace IRACMS.DA.Controllers
@@ -20,8 +23,10 @@ namespace IRACMS.DA.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        [HttpPost]
+        public object Post([FromBody]SaveDataModel value)
         {
+            return value;
         }
 
         // PUT api/values/5

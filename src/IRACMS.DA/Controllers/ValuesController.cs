@@ -71,7 +71,7 @@ namespace IRACMS.DA.Controllers
             return compressedXML; //.Replace(" ", "");
         }
 
-        public HttpResponseMessage Post([FromBody]SaveDataModel model)
+        public object Post([FromBody]SaveDataModel model)
         {
             try
             {
@@ -87,16 +87,18 @@ namespace IRACMS.DA.Controllers
                     data = new { ID = 0, status = false };
                 }
 
-                return Request.CreateResponse(HttpStatusCode.OK, data);
+                return data; // Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
             {
-                var response = new HttpResponseMessage(HttpStatusCode.InternalServerError)
+                //var response = new HttpResponseMessage(HttpStatusCode.InternalServerError)
+                object data = new
                 {
                     Content = new StringContent(string.Format("Error!: {0}", ex.Message)),
                     ReasonPhrase = "Saving Error: " + ex.Message
                 };
-                throw new HttpResponseException(response);
+                //throw new HttpResponseException(response);
+                return data;
             }
         }
     }

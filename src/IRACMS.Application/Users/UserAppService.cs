@@ -8,8 +8,6 @@ using IRACMS.Authorization.Users;
 using IRACMS.Users.Dto;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
-using Abp.Authorization;
-using Abp.Authorization.Users;
 using Microsoft.EntityFrameworkCore;
 using Abp.IdentityFramework;
 using IRACMS.Authorization.Roles;
@@ -17,7 +15,7 @@ using IRACMS.Roles.Dto;
 
 namespace IRACMS.Users
 {
-    [AbpAuthorize(PermissionNames.Pages_Users)]
+    // [AbpAuthorize(PermissionNames.Pages_Users)]
     public class UserAppService : AsyncCrudAppService<User, UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>, IUserAppService
     {
         private readonly UserManager _userManager;
@@ -25,13 +23,8 @@ namespace IRACMS.Users
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IRepository<Role> _roleRepository;
 
-        public UserAppService(
-            IRepository<User, long> repository,
-            UserManager userManager,
-            IPasswordHasher<User> passwordHasher,
-            IRepository<Role> roleRepository,
-            RoleManager roleManager)
-            : base(repository)
+        public UserAppService(IRepository<User, long> repository, UserManager userManager, IPasswordHasher<User> passwordHasher,
+            IRepository<Role> roleRepository, RoleManager roleManager) : base(repository)
         {
             _userManager = userManager;
             _passwordHasher = passwordHasher;
@@ -41,7 +34,7 @@ namespace IRACMS.Users
 
         public override async Task<UserDto> Create(CreateUserDto input)
         {
-            CheckCreatePermission();
+            // CheckCreatePermission();
 
             var user = ObjectMapper.Map<User>(input);
 
@@ -63,7 +56,7 @@ namespace IRACMS.Users
 
         public override async Task<UserDto> Update(UserDto input)
         {
-            CheckUpdatePermission();
+            // CheckUpdatePermission();
 
             var user = await _userManager.GetUserByIdAsync(input.Id);
 

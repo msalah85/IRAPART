@@ -101,7 +101,7 @@ namespace IRACMS.Web.Host.Startup
 
             app.UseAuthentication();
             app.UseJwtTokenMiddleware();
-
+            
 #if FEATURE_SIGNALR
             //Integrate to OWIN
             app.UseAppBuilder(ConfigureOwinServices);
@@ -116,6 +116,8 @@ namespace IRACMS.Web.Host.Startup
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(name: "api", template: "api/{controller=Values}");
             });
 
             // Enable middleware to serve generated Swagger as a JSON endpoint
